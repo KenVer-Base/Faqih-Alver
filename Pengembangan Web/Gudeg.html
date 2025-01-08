@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UTY Article - Fakta Menarik</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <strong>UTY ARTICLE</strong>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Inti Artikel -->
+    <div class="content">
+        <h1>Fakta Menarik Mengenai Gudeg Bagong Dan Gudeg Yu Narni</h1>
+        <h2>Gudeg</h2>
+
+
+        <article>
+            <h3>Gudeg Bagong</h3>
+            <img src="file:///C:/Users/faqih/Downloads/Pengembangan%20Web/IMG-20241204-WA0035.jpg" class="Dokumentasi">
+            <p>
+                Salah satu tempat gudeg terkenal adalah Gudeg Bagong. Gudeg Bagong adalah makanan khas Yogyakarta yang terkenal dengan cita rasanya yang manis dan gurih. Terbuat dari nangka muda yang dimasak dalam waktu lama dengan santan dan rempah-rempah khas, gudeg
+                memiliki tekstur lembut dan aroma yang khas. Biasanya, gudeg disajikan dengan nasi, ayam kampung, telur pindang, tempe, tahu, dan sambal krecek. Inovasi terbaru dari Gudeg Bagong adalah pengemasan dalam kaleng. Langkah ini menjadikan gudeg
+                lebih praktis dan tahan lama, memungkinkan pecinta gudeg di mana pun berada untuk menikmati kelezatan makanan ini tanpa harus khawatir tentang kesegaran atau cara penyimpanannya. Gudeg dalam kaleng juga sangat cocok sebagai oleh-oleh atau
+                untuk dinikmati kapan saja tanpa perlu persiapan rumit. Dengan adanya inovasi ini, Gudeg Bagong tetap mempertahankan cita rasa otentiknya sambil menawarkan kemudahan bagi konsumen modern.
+            </p>
+        </article>
+
+        <article>
+            <h3>Gudeg Yu Narni</h3>
+            <img src="Yu Narni.jpg" class="Dokumentasi">
+            <p>
+                Tempat selanjutnya adalah Gudeg Yu Narni. Gudeg Yu Narni adalah salah satu rumah makan di Yogyakarta yang khusus menyediakan menu gudeg. Gudeg Yu Narni sudah ada sejak tahun 1940, sehingga kualitas gudegnya sangatlah terjaga hingga saat ini. Ditambah
+                dengan harga yang termasuk lebih miring dibandingkan gudeg lain yang sama terkenalnya. Awalnya didirikan oleh (alm) Ibu Wito Suwarno dan diteruskan oleh Ibu Narni Suwardi, Gudeg Yu Narni adalah salah satu gudeg yang dapat bertahan 2 hari
+                tanpa pengawet. Gudeg Yu Narni menjual jenis gudeg kering, yaitu gudeg yang diolah sama seperti gudeg basah tetapi dilanjutkan dengan proses penumisan dengan bumbu-bumbu. Gudeg kering lebih awet dibandingkan dengan gudeg basah dan memiliki
+                daya tahan selama 24 jam tanpa masuk refrigerator dan dapat dibawa sebagai oleh-oleh. Keunggulan dari Gudeg Yu Narni adalah rasanya tidak terlalu manis dan ada asinnya sehingga dapat diterima konsumen dari luar Yogyakarta.
+            </p>
+        </article>
+        </section>
+        <!-- Hero Section -->
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>@2024 UTY Article</div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    // Smooth scrolling to sections
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Fade-in animation on scroll
+    const fadeInElements = document.querySelectorAll('.article');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.transition = "opacity 1.5s";
+                entry.target.style.opacity = 1;
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    fadeInElements.forEach(element => {
+        element.style.opacity = 0; // Set initial state to transparent
+        observer.observe(element);
+    });
+
+    // Bouncing animation on button hover
+    document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('mouseover', () => {
+            button.style.position = "relative";
+            button.style.transition = "transform 0.2s";
+            button.style.transform = "translateY(-5px)";
+        });
+        button.addEventListener('mouseout', () => {
+            button.style.transform = "translateY(0)";
+        });
+    });
+
+    // Header logo animation on load
+    window.addEventListener('load', () => {
+        const logo = document.querySelector('.logo');
+        if (logo) {
+            logo.style.transition = "transform 2s";
+            logo.style.transform = "scale(1.1)";
+            setTimeout(() => {
+                logo.style.transform = "scale(1)";
+            }, 2000);
+        }
+    });
+</script>
+
+</html>

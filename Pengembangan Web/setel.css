@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #2e7fb1;
+    box-shadow: 6px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-ul li {
+    margin-left: 20px;
+}
+
+.nav-ul li a {
+    text-decoration: none;
+    color: #2e7fb1;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.nav-ul li a:hover {
+    background-color: #2e7fb1;
+    color: #ffffff;
+}
+
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.content1 {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* Contact Page Specific Styles */
+
+.contact-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #2e7fb1;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-container form .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-container form .form-group input,
+.contact-container form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container form .form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-container form button {
+    padding: 10px 20px;
+    background-color: #2e7fb1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container form button:hover {
+    background-color: #d9c1ae;
+    color: #2e7fb1;
+}

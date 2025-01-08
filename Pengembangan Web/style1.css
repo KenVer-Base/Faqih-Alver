@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f5eb;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+
+/* NavBar */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #651600;
+    color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-ul li {
+    margin-left: 20px;
+}
+
+.nav-ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.nav-ul li a:hover {
+    background-color: #d9c1ae;
+    color: #651600;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero img {
+    border-radius: 10px;
+}

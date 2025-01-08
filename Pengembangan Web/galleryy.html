@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Art Gallery
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        
+        .contain {
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .header .sort {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .header .paintings-count {
+            font-size: 14px;
+            color: #aaa;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .gallery .large {
+            grid-column: span 3;
+        }
+        
+        .gallery .caption {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .nav-arrows {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        .nav-arrows .arrow {
+            font-size: 24px;
+            color: #a67c52;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            .gallery .large {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="sort">
+                Sort by popularity
+                <i class="fas fa-caret-down">
+     </i>
+            </div>
+            <div class="paintings-count">
+                Paintings: 1736
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="large">
+                <img alt="1" height="600" src="https://storage.googleapis.com/a1aa/image/LCcYIm67Ie3qeEeyCo1AdQflk0tghIezBIus8Swn8I2OvVFgC.jpg" width="900" />
+                <div class="caption">
+                    1
+                </div>
+            </div>
+            <div>
+                <img alt="2" height="400" src="https://storage.googleapis.com/a1aa/image/kwtf48lhK4z9Piw4dgtBV1lMZoOVNAkSj7vNEigb2mtetqAUA.jpg" width="300" />
+                <div class="caption">
+                    2
+                </div>
+            </div>
+            <div>
+                <img alt="3" height="400" src="https://storage.googleapis.com/a1aa/image/XHoJPIOmGobpHFekiuEemTwyCjDzOmo2ekPNAZKPsRFf3qCQB.jpg" width="300" />
+                <div class="caption">
+                    3
+                </div>
+            </div>
+            <div>
+                <img alt="4" height="400" src="https://storage.googleapis.com/a1aa/image/91fcF3H2VH0eqkxaE2ncjnfJIGv9r3JwnzQ4GQhmqcA3bVBoA.jpg" width="300" />
+                <div class="caption">
+                    4
+                </div>
+            </div>
+            <div>
+                <img alt="5" height="400" src="https://storage.googleapis.com/a1aa/image/spCXP19E9CrOFpjXPrTGOkXHatGDArpl5Zfgruky2yb8WVAKA.jpg" width="300" />
+                <div class="caption">
+                    5
+                </div>
+            </div>
+        </div>
+        <div class="nav-arrows">
+            <div class="arrow">
+                <i class="fas fa-chevron-left">
+     </i>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-right">
+     </i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

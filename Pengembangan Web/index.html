@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>UTYEAH</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #A4EB34;
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border-radius: 50px;
+            padding: 5px 15px;
+        }
+        
+        .search-bar input {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 5px;
+            font-size: 16px;
+        }
+        
+        .search-bar i {
+            color: #A4EB34;
+            font-size: 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .join-btn {
+            background-color: #A4EB34;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        
+        .main-content img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .overlay h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .overlay .btn {
+            background-color: #A4EB34;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .overlay h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            UTY<span>EAH</span>
+        </div>
+        <div class="search-bar">
+            <input placeholder="Search..." type="text" />
+            <i class="fas fa-search"></i>
+        </div>
+        <nav class="nav-links">
+            <a href="#">ABOUT US</a>
+            <a class="join-btn" href="#">JOIN</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div style="position: relative;">
+            <img alt="People sitting in a restaurant with large windows" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHJlc3RhdXJhbnR8ZW58MHx8fHwxNjE2NzY2NzY0&ixlib=rb-1.2.1&q=80&w=900&h=500"
+            />
+            <div class="overlay">
+                <h1>CEPAT LULUS, CEPAT KARIR, CEPAT MATI</h1>
+                <a class="btn" href="#">SELENGKAPNYA</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
