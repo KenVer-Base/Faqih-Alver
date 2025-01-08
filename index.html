@@ -18,7 +18,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faqih Al Bashori</title>
+    <title>F</title>
 </head>
 
 
@@ -55,7 +55,7 @@
                 <div class="skill-item">After Effects</div>
                 <div class="skill-item">Photoshop</div>
             </div>
-            <a class="download-btn" href="CV Faqih.html" target="_blank">Download CV</a>
+            <a class="download-btn" href="CV/CV Faqih.html" target="_blank">Download CV</a>
         </div>
     </section>
 
@@ -102,9 +102,9 @@
 
     <!-- spesialis -->
     <br>
-    <section>
+    <section id="spesialis">
         <div class="contain">
-            <div class="title" id="spesialis">SPECIALIZED IN</div>
+            <div class="title">SPECIALIZED IN</div>
             <div class="cards">
                 <div class="card">
                     <i class="fas fa-microphone-alt"></i>
@@ -154,8 +154,8 @@
     <!-- pengalaman -->
 
     <!--projek -->
-    <section id="project"> <br>
-        <div class="trainers-section">
+    <section> <br>
+        <div class="trainers-section" id="project">
             <div class="header">
                 <h1>My <span>Project</span></h1>
                 <p>Here my project that i made in my college and also my personal project</p>
@@ -182,6 +182,10 @@
                     <p>the film i directed while in college, this film is about the etiquette of students when visiting</p>
                 </a>
             </div>
+            <div class="header2">
+                <h1>More <span>Project Here!</span></h1>
+                <a class="download-btn" href="https://drive.google.com/drive/folders/1O613nB0s5u-Kbea3zbpcfKe6nnHBOAgg?usp=sharing" target="_blank">Projects</a>
+            </div>
 
             <br></section>
     <!-- project -->
@@ -192,9 +196,9 @@
         <div class="footer">
             <p>&copy; 2023 Faqih Al Bashori. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/1UuR6gRUL5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.linkedin.com/in/faqih-al-bashori-36234b317/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/q1hh_?igsh=Mm5xd2ZqazFjZXNq" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="https://youtube.com/@ken_66?si=l0a4FNhqz5nuJ2Od" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
@@ -263,13 +267,10 @@
             });
         });
 
-
-
-            skill.addEventListener('mouseout', () => {
-                skill.style.transform = 'scale(1)';
-                skill.style.backgroundColor = '';
-            });
-       
+        skill.addEventListener('mouseout', () => {
+            skill.style.transform = 'scale(1)';
+            skill.style.backgroundColor = '';
+        });
 
         // Card Click Interaction
         document.querySelectorAll('.card').forEach(card => {
